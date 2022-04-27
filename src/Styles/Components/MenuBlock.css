@@ -1,0 +1,15 @@
+.MenuBlock {
+    display: flex;
+    padding: 1em;
+    border-radius: 1em;
+    width: 3em;
+    height: 3em;
+    background: #feefe0;
+    border: 2px solid #E87B2B;
+    border-radius: .5em;
+}
+
+#dark .MenuBlock {
+    background: #2c2a50;
+    border: 2px solid #feefe0;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap');
+
+:root {
+    --darkFront: #ffeada;
+    --darkBack: #2c2a50;
+    --lightFront: #3d3b54;
+    --lightBack: #f0d8c8;
+}
+
+* {
+    font-family: 'Shippori Antique B1', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    user-select: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.Background {
+    height: 100%;
+    width: 150%;
+    left: -1rem;
+    top: 0rem;
+    padding: 1rem;
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e4936b' fill-opacity='0.32'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+
+#dark .Background {
+    background-color: var(--darkBack);
+    color: var(--darkFront);
+}
+
+#light .Background {
+    background-color: var(--lightBack);
+    color: var(--lightFront);
+}
+
+.Backdrop {
+    padding: 1em;
+    border-radius: 1em;
+    max-width: 80vw;
+}
+
+#light .Backdrop {
+    background-color: #f7f2f0;
+    box-shadow: 5px 10px #5335319d;
+}
+#dark .Backdrop {
+    background-color: #454d74;
+    box-shadow: 5px 10px #1e0d2a9d;
+}
+
+.CenteredXY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.CenteredX {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
